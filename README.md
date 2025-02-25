@@ -24,8 +24,7 @@
 
 ## Запуск
 1. Поднимите контейнер: 
-   `docker-compose up -d
-    docker-compose up`
+   `docker-compose up -d`
 2. Запустите по порядку скрипты в отдельных терминалах:
 `python src/data_loader_fraud.py
 python src/model_training.py 
