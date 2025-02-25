@@ -26,10 +26,12 @@
 1. Поднимите контейнер: 
    `docker-compose up -d`
 2. Запустите по порядку скрипты в отдельных терминалах:
-`python src/data_loader_fraud.py
-python src/model_training.py 
-streamlit run app.py`
+```
+python src/data_loader_fraud.py
+python src/model_training.py
+streamlit run app.py
+```
 
 ## Выключение
-Во всех консолях остановите работу скриптов через `Ctrl+C`
-Выполните `docker-compose down`
+1. Во всех консолях остановите работу скриптов через `Ctrl+C`
+2. Выполните `docker-compose down`
