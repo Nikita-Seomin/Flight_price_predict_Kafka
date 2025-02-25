@@ -4,7 +4,7 @@ import random
 from confluent_kafka import Producer
 import threading
 import pandas as pd
-import config
+from src import config
 from preprocrsing import get_unique_categories
 
 
@@ -27,7 +27,7 @@ def start_producer(producer_id, topic, dataset, num_messages):
 
 
 def load_dataset():
-    df = pd.read_csv('Clean_Dataset.csv')  # Make sure the path is correct
+    df = pd.read_csv('../Clean_Dataset.csv')  # Make sure the path is correct
     # dataset = df.to_dict(orient='records')
     return df
 

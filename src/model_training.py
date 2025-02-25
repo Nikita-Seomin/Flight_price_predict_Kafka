@@ -4,7 +4,8 @@ import random
 from confluent_kafka import Consumer, Producer
 from river import compose, preprocessing, metrics, linear_model
 import pandas as pd
-import config
+from src import config
+
 
 def data_preparation(sample):
     sample_x = pd.DataFrame([sample])
